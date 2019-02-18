@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.hjq.demo">
+  <!-- 外部存储读写权限 -->
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 拍照权限 -->
+  <uses-permission android:name="android.permission.CAMERA" /> <!-- 联网权限 -->
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.WAKE_LOCK" />
+  <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <uses-permission android:name="android.permission.CAMERA" />
+  <uses-permission android:name="android.permission.RECORD_AUDIO" />
+  <uses-permission android:name="android.permission.VIBRATE" />
+  <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" /> <!-- 用于进行网络定位 -->
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 用于访问GPS定位 -->
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 用于获取运营商信息，用于支持提供运营商信息相关的接口 -->
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+  <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- 用于读取手机当前的状态 -->
+  <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 用于写入缓存数据到扩展存储卡 -->
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 用于申请调用A-GPS模块 -->
+  <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" /> <!-- 用于申请获取蓝牙信息进行室内定位 -->
+  <uses-permission android:name="android.permission.BLUETOOTH" />
+  <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+  <application
+    android:name=".common.MyApplication"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:networkSecurityConfig="@xml/network_security_config"
+    android:roundIcon="@mipmap/ic_launcher"
+    android:theme="@style/AppTheme">
+    <activity android:name=".ui.activity.MyFollowActivity"></activity>
+    <activity android:name=".ui.activity.SearchActivity" />
+    <activity android:name=".ui.activity.OrderDetailActivity" />
+    <activity android:name=".ui.activity.HouseDetailActivity" />
+    <activity android:name=".ui.activity.HotelDetailActivity" />
+
+    <provider
+      android:name="android.support.v4.content.FileProvider"
+      android:authorities="fileProvider"
+      android:exported="false"
+      android:grantUriPermissions="true">
+      <meta-data
+        android:name="android.support.FILE_PROVIDER_PATHS"
+        android:resource="@xml/filepaths" />
+    </provider>
+
+    <activity android:name=".ui.activity.AddHotelActivity" />
+    <activity android:name=".ui.activity.PublishActivity" /> <!-- 启动页面（因为使用了LauncherTheme，所以不要给这个Activity设置screenOrientation属性，会导致崩溃） -->
+    <activity
+      android:name=".ui.activity.LauncherActivity"
+      android:theme="@style/LauncherTheme">
+
+      <!-- 程序入口 -->
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <action android:name="android.intent.action.VIEW" />
+
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <activity
+      android:name="com.yalantis.ucrop.UCropActivity"
+      android:screenOrientation="portrait"
+      android:theme="@style/AppTheme" />
+
+    <meta-data
+      android:name="com.amap.api.v2.apikey"
+      android:value="3b415c4b6bc28f7cc8e3f7dc13182f91" /> <!-- 定位需要的服务 -->
+    <service android:name="com.amap.api.location.APSService" /> <!-- 主页界面 -->
+    <activity
+      android:name=".ui.activity.HomeActivity"
+      android:alwaysRetainTaskState="true"
+      android:launchMode="singleTop" /> <!-- 登录界面 -->
+    <activity
+      android:name=".ui.activity.LoginActivity"
+      android:launchMode="singleTop" /> <!-- 注册界面 -->
+    <activity
+      android:name=".ui.activity.RegisterActivity"
+      android:launchMode="singleTop" /> <!-- 关于界面 -->
+    <activity
+      android:name=".ui.activity.AboutActivity"
+      android:label="@string/about_text"
+      android:launchMode="singleTop" /> <!-- 浏览器界面 -->
+    <activity
+      android:name=".ui.activity.WebActivity"
+      android:launchMode="singleTop" /> <!-- 对话框使用案例界面 -->
+    <activity android:name=".ui.activity.DialogActivity" />
+
+    <provider
+      android:name="cn.bmob.v3.util.BmobContentProvider"
+      android:authorities="com.hjq.demo.BmobContentProvider" />
+  </application>
+
+</manifest>

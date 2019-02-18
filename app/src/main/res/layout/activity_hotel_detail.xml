@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".ui.activity.HotelDetailActivity">
+
+  <android.support.design.widget.AppBarLayout
+    android:id="@+id/abl_test_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:elevation="0dp">
+
+    <com.hjq.demo.widget.XCollapsingToolbarLayout
+      android:id="@+id/ctl_test_bar"
+      android:layout_width="match_parent"
+      android:layout_height="@dimen/space_440"
+      app:contentScrim="@color/white"
+      app:layout_scrollFlags="scroll|exitUntilCollapsed"
+      app:scrimVisibleHeightTrigger="@dimen/space_240">
+
+      <ImageView
+        android:scaleType="centerCrop"
+        android:id="@+id/iv_detail"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_440" />
+
+      <android.support.v7.widget.Toolbar
+        android:id="@+id/t_test_title"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        app:layout_collapseMode="pin" />
+
+      <com.hjq.bar.TitleBar
+        app:backButton="false"
+        android:id="@+id/tb_test_a_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        app:barStyle="transparent"
+        app:layout_collapseMode="pin">
+        
+      </com.hjq.bar.TitleBar>
+
+    </com.hjq.demo.widget.XCollapsingToolbarLayout>
+
+  </android.support.design.widget.AppBarLayout>
+
+
+  <android.support.v4.widget.NestedScrollView
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout
+      android:background="@color/white"
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+      
+      <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        
+        <LinearLayout
+          android:orientation="vertical"
+          android:gravity="center_horizontal"
+          android:layout_width="110dp"
+          android:layout_height="wrap_content">
+
+          <TextView
+            android:id="@+id/tv_score"
+            android:textColor="#FBA21F"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+          <TextView
+            android:id="@+id/tv_score_tip"
+            android:textColor="#FBA21F"
+            android:text="高于82%的旅社"
+            android:textSize="12sp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+          <TextView
+            android:id="@+id/tv_type"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/gray"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+        <ImageView
+          android:id="@+id/iv_map"
+          android:scaleType="centerCrop"
+          android:layout_marginLeft="110dp"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent" />
+        
+      </FrameLayout>
+
+      <View
+        android:background="@color/gray"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+      <TextView
+        android:id="@+id/tv_address"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+      <TextView
+        android:id="@+id/tv_phone"
+        android:autoLink="phone"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+      <TextView
+        android:id="@+id/tv_desc"
+        android:paddingLeft="15dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+      <View
+        android:background="#E6E6E6"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+      <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_house"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+      
+    </LinearLayout>
+    
+  </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

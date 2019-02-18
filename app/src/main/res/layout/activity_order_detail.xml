@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  tools:context=".ui.activity.OrderDetailActivity">
+
+  <com.hjq.bar.TitleBar
+    android:id="@+id/tb_order"
+    app:title="订单详情"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"/>
+
+  <TextView
+    android:id="@+id/tv_house_name"
+    android:background="@color/white"
+    android:textSize="15sp"
+    android:textColor="@color/black"
+    android:paddingTop="5dp"
+    android:paddingEnd="10dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+  <TextView
+    android:id="@+id/tv_pay_price"
+    android:background="@color/white"
+    android:text="支付金额：456元"
+    android:textSize="15sp"
+    android:textColor="@color/black"
+    android:paddingTop="5dp"
+    android:paddingEnd="10dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+  <TextView
+    android:id="@+id/tv_time"
+    android:background="@color/white"
+    android:text="预定时间："
+    android:textSize="15sp"
+    android:textColor="@color/black"
+    android:paddingTop="5dp"
+    android:paddingEnd="10dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+  <TextView
+    android:id="@+id/tv_order_time"
+    android:background="@color/white"
+    android:text="下单时间："
+    android:textSize="15sp"
+    android:textColor="@color/black"
+    android:paddingTop="5dp"
+    android:paddingEnd="10dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+
+
+</LinearLayout>

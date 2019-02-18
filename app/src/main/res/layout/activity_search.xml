@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  tools:context=".ui.activity.SearchActivity">
+
+  <com.hjq.bar.TitleBar
+    android:id="@+id/tb_search"
+    app:rightTitle="搜索"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize">
+
+    <EditText
+      android:id="@+id/et_search_input"
+      android:singleLine="true"
+      android:layout_gravity="center"
+      android:layout_marginRight="50dp"
+      android:layout_marginLeft="50dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content" />
+
+  </com.hjq.bar.TitleBar>
+
+  <android.support.v7.widget.RecyclerView
+    android:id="@+id/rv_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+
+</LinearLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  tools:context=".ui.activity.HouseDetailActivity">
+
+  <com.hjq.bar.TitleBar
+    android:id="@+id/tb_house"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"/>
+
+  <com.google.vr.sdk.widgets.pano.VrPanoramaView
+    android:id="@+id/vr_panorama"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"/>
+
+  <TextView
+    android:background="@color/white"
+    android:id="@+id/tv_number"
+    android:textSize="15sp"
+    android:textColor="@color/black"
+    android:paddingTop="5dp"
+    android:paddingEnd="10dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+  <TextView
+    android:background="@color/white"
+    android:id="@+id/tv_live_count"
+    android:textSize="15sp"
+    android:textColor="@color/black"
+    android:paddingTop="5dp"
+    android:paddingEnd="10dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+  <TextView
+    android:background="@color/white"
+    android:id="@+id/tv_area"
+    android:textSize="15sp"
+    android:textColor="@color/black"
+    android:paddingTop="5dp"
+    android:paddingEnd="10dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+  <TextView
+    android:background="@color/white"
+    android:text="入住时间：点击选择"
+    android:id="@+id/tv_live_time"
+    android:textSize="15sp"
+    android:textColor="@color/black"
+    android:paddingTop="5dp"
+    android:paddingEnd="10dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+  <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+      android:background="@color/white"
+      android:elevation="5dp"
+      android:layout_gravity="bottom"
+      android:layout_width="match_parent"
+      android:layout_height="50dp">
+
+      <TextView
+        android:id="@+id/tv_price"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:textColor="@color/red"
+        android:text="99"
+        android:textSize="22sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+      <TextView
+        android:textSize="15sp"
+        android:text="/晚"
+        android:layout_marginLeft="5dp"
+        android:layout_toEndOf="@id/tv_price"
+        android:layout_alignBottom="@id/tv_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+      <Button
+        android:id="@+id/btn_reserve"
+        android:background="#EFB919"
+        android:layout_alignParentRight="true"
+        android:text="预定"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+  </FrameLayout>
+
+
+
+</LinearLayout>

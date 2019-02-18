@@ -1,0 +1,34 @@
+apply from: "config.gradle"
+
+buildscript {
+    repositories {
+        jcenter()
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.2.1'
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.2.2'
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        google()
+        maven {url "https://jitpack.io"}
+        maven { url "https://raw.github.com/bmob/bmob-android-sdk/master" }
+    }
+
+    //解决app:mockableAndroidJar错误的问题
+    gradle.taskGraph.whenReady {
+        tasks.each { task ->
+            if (task.name.equals('mockableAndroidJar')) {
+                task.enabled = false
+            }
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

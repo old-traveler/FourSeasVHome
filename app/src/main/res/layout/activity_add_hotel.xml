@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  tools:context=".ui.activity.AddHotelActivity">
+
+  <com.hjq.bar.TitleBar
+    android:id="@+id/tb_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:title="添加旅馆" />
+
+  <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+      android:id="@+id/iv_hotel"
+      android:scaleType="centerCrop"
+      android:background="@color/gray"
+      android:layout_width="match_parent"
+      android:layout_height="200dp" />
+
+    <TextView
+      android:id="@+id/tv_add_image"
+      android:textSize="18sp"
+      android:textColor="@color/white"
+      android:text="点击添加图片"
+      android:layout_gravity="center"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+
+  </FrameLayout>
+
+  <EditText
+    android:id="@+id/et_name"
+    android:singleLine="true"
+    android:padding="10dp"
+    android:hint="名称"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+  <EditText
+    android:id="@+id/et_contract"
+    android:singleLine="true"
+    android:inputType="phone"
+    android:padding="10dp"
+    android:hint="联系电话"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+  <EditText
+    android:id="@+id/et_detail"
+    android:singleLine="true"
+    android:padding="10dp"
+    android:hint="详情介绍"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+  <TextView
+    android:id="@+id/tv_type"
+    android:textColor="@color/black"
+    android:textSize="16sp"
+    android:padding="10dp"
+    android:text="类型：点击选择"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+  <TextView
+    android:id="@+id/tv_address"
+    android:textColor="@color/black"
+    android:textSize="16sp"
+    android:padding="10dp"
+    android:text="地址：北京市"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+
+
+</LinearLayout>
