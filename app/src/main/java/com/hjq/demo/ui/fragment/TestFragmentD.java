@@ -31,12 +31,6 @@ import com.hjq.toast.ToastUtils;
 import de.hdodenhof.circleimageview.CircleImageView;
 import java.util.Arrays;
 
-/**
- * author : Android 轮子哥
- * github : https://github.com/getActivity/AndroidProject
- * time   : 2018/10/18
- * desc   : 项目界面跳转示例
- */
 public class TestFragmentD extends MyLazyFragment {
 
   @BindView(R.id.tb_test_d_title)

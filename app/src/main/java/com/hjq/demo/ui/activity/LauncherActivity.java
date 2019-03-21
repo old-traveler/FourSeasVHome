@@ -18,12 +18,7 @@ import java.util.List;
 
 import butterknife.BindView;
 
-/**
- *    author : Android 轮子哥
- *    github : https://github.com/getActivity/AndroidProject
- *    time   : 2018/10/18
- *    desc   : 启动界面
- */
+
 public class LauncherActivity extends MyActivity
         implements OnPermission, Animation.AnimationListener {
 

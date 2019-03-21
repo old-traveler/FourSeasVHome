@@ -22,12 +22,6 @@ import java.util.List;
 
 import butterknife.BindView;
 
-/**
- *    author : Android 轮子哥
- *    github : https://github.com/getActivity/AndroidProject
- *    time   : 2018/12/02
- *    desc   : 对话框使用案例
- */
 public class DialogActivity extends MyActivity implements View.OnClickListener {
 
     @BindView(R.id.btn_dialog_message)

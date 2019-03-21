@@ -24,6 +24,7 @@ public class BaseDialogFragment extends DialogFragment {
     private static String sShowTag;
     private static long sLastTime;
 
+
     /**
      * 父类同名方法简化
      */

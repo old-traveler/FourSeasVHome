@@ -16,12 +16,7 @@ import com.hjq.toast.ToastUtils;
 
 import butterknife.BindView;
 
-/**
- *    author : Android 轮子哥
- *    github : https://github.com/getActivity/AndroidProject
- *    time   : 2018/10/18
- *    desc   : 登录界面
- */
+
 public class LoginActivity extends MyActivity
         implements View.OnClickListener {
 

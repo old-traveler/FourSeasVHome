@@ -16,12 +16,7 @@ import android.view.ViewGroup;
 
 import java.lang.reflect.Field;
 
-/**
- *    author : Android 轮子哥
- *    github : https://github.com/getActivity/AndroidProject
- *    time   : 2018/10/18
- *    desc   : Fragment 懒加载基类
- */
+
 public abstract class BaseLazyFragment extends Fragment {
 
     // Activity对象

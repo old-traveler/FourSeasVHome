@@ -14,12 +14,6 @@ import android.view.inputmethod.InputMethodManager;
 
 import java.util.Random;
 
-/**
- *    author : Android 轮子哥
- *    github : https://github.com/getActivity/AndroidProject
- *    time   : 2018/10/18
- *    desc   : Activity 基类
- */
 public abstract class BaseActivity extends AppCompatActivity {
 
     private static final Handler HANDLER = new Handler(Looper.getMainLooper());

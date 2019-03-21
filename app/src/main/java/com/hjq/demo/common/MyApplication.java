@@ -9,12 +9,7 @@ import com.hjq.demo.helper.DaoHelper;
 import com.hjq.toast.ToastUtils;
 import com.hjq.umeng.UmengHelper;
 
-/**
- *    author : Android 轮子哥
- *    github : https://github.com/getActivity/AndroidProject
- *    time   : 2018/10/18
- *    desc   : 项目中的Application基类
- */
+
 public class MyApplication extends UIApplication {
 
     private static Context mContext;

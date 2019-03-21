@@ -27,12 +27,6 @@ import android.view.animation.Interpolator;
 import com.hjq.dialog.R;
 
 
-/**
- *    author : Runly
- *    github : https://github.com/Runly/CircularProgressView
- *    time   : 2018/10/18
- *    desc   : CircularProgressView
- */
 public class ProgressView extends View {
 
     public static final int MODE_DETERMINATE = 0;

@@ -12,12 +12,7 @@ import android.view.ViewGroup;
 
 import java.lang.ref.WeakReference;
 
-/**
- *    author : Android 轮子哥
- *    github : https://github.com/getActivity/AndroidProject
- *    time   : 2018/10/18
- *    desc   : RecyclerView 适配器基类
- */
+
 public abstract class BaseRecyclerViewAdapter<VH extends BaseRecyclerViewAdapter.ViewHolder>
                         extends RecyclerView.Adapter<VH> {
     // RecyclerView 对象

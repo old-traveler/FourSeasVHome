@@ -6,12 +6,6 @@ import android.os.Bundle;
 
 import java.util.HashMap;
 
-/**
- *    author : Android 轮子哥
- *    github : https://github.com/getActivity/AndroidProject
- *    time   : 2018/11/18
- *    desc   : Activity 栈管理
- */
 public class ActivityStackManager implements Application.ActivityLifecycleCallbacks {
 
     private static ActivityStackManager sInstance;

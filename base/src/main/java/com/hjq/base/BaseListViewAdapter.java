@@ -11,12 +11,7 @@ import android.widget.BaseAdapter;
 
 import java.lang.ref.WeakReference;
 
-/**
- *    author : Android 轮子哥
- *    github : https://github.com/getActivity/AndroidProject
- *    time   : 2018/10/18
- *    desc   : ListView 适配器基类
- */
+
 public abstract class BaseListViewAdapter<VH extends BaseListViewAdapter.ViewHolder> extends BaseAdapter {
 
     // 上下文对象

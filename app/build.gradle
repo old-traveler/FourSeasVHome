@@ -169,6 +169,7 @@ dependencies {
   implementation 'org.greenrobot:greendao:3.2.2'
 
   implementation 'com.google.vr:sdk-panowidget:1.10.0'
+  implementation 'com.github.old-traveler:HeadZoomLayout:v1.0.0'
 }
 
 repositories {

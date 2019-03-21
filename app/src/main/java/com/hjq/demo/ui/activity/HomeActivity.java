@@ -13,12 +13,7 @@ import com.hjq.demo.ui.adapter.HomeFragmentAdapter;
 
 import butterknife.BindView;
 
-/**
- *    author : Android 轮子哥
- *    github : https://github.com/getActivity/AndroidProject
- *    time   : 2018/10/18
- *    desc   : 主页界面
- */
+
 public class HomeActivity extends MyActivity implements
         ViewPager.OnPageChangeListener, BottomNavigationView.OnNavigationItemSelectedListener {
 

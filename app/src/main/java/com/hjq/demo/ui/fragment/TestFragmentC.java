@@ -30,12 +30,6 @@ import com.scwang.smartrefresh.layout.listener.OnLoadMoreListener;
 import com.scwang.smartrefresh.layout.listener.OnRefreshListener;
 import java.util.List;
 
-/**
- * author : Android 轮子哥
- * github : https://github.com/getActivity/AndroidProject
- * time   : 2018/10/18
- * desc   : 项目框架使用示例
- */
 public class TestFragmentC extends MyLazyFragment {
 
   @BindView(R.id.tb_order)
